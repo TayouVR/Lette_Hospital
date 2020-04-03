@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
-public class Krankenhaus {
+public class Hospital {
     private String name;
     private ArrayList<Station> stations = new ArrayList<>();
     private int anzStationen;
 
-    public Krankenhaus(String name) {
+    public Hospital(String name) {
         this.name = name;
     }
 

@@ -28,7 +28,7 @@ public class Start {
         Station w2=new Station("Geburt"); 
         Station w3=new Station("Kettensägen Massaker extrem Chirurgie");
 
-        w1.addPatient(p1); 
+        w1.addPatient(p1);
         w1.addPatient(p2); 
         w1.addPatient(p3); 
         w3.addPatient(p4);
@@ -50,7 +50,7 @@ public class Start {
         System.out.println("Der Patient Nr " + patientId + " wurde gelöscht: " + w1.deletePatient(patientId));
         w1.displayAll();
 
-        Krankenhaus h1=new Krankenhaus("Martin Luther Krankenhaus"); 
+        Hospital h1=new Hospital("Martin Luther Krankenhaus");
         h1.addStation(w2); 
         h1.addStation(w1); 
         h1.addStation(w3);
