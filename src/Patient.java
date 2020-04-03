@@ -3,7 +3,7 @@ public class Patient {
     int age;
     String name;
 
-    public Patient(String name, int id, int age) {
+    public Patient(int id, String name, int age) {
         this.id = id;
         this.age = age;
         this.name = name;

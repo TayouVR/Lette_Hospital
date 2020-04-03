@@ -20,7 +20,7 @@ public class Station {
 
     public boolean searchPatient(String name) {
         for (Patient s: patients) {
-            if (s.getName().equals(name)) {
+            if (s.name.equals(name)) {
                 return true;
             }
         }
@@ -29,7 +29,7 @@ public class Station {
 
     public boolean deletePatient(String name) {
         for (Patient s: patients) {
-            if (s.getName().equals(name)) {
+            if (s.name.equals(name)) {
                 patients.remove(s);
                 anzPatienten--;
                 return true;
