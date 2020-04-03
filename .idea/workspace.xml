@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="264709bf-b48a-4c39-b0ea-92d63db3c3a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +51,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="243" key="#com.intellij.ide.util.MemberChooser" timestamp="1585902088922">
+    <state x="765" y="243" key="#com.intellij.ide.util.MemberChooser" timestamp="1585903299964">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="243" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1585902088922" />
+    <state x="765" y="243" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.0.1920.1080/-1920.0.1920.1040@0.0.1920.1080" timestamp="1585903299964" />
   </component>
 </project>
