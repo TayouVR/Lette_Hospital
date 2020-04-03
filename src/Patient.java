@@ -1,7 +1,7 @@
 public class Patient {
-    int id;
-    int age;
-    String name;
+    protected int id;
+    protected int age;
+    protected String name;
 
     public Patient(int id, String name, int age) {
         this.id = id;
