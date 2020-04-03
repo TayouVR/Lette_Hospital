@@ -39,8 +39,9 @@ public class Station {
     }
 
     public void displayAll() {
-        for (Patient s: patients) {
-            System.out.println(s);
+        for (Patient p: patients) {
+            System.out.println(p.name + ", ID: " + p.id + ", Age: " + p.age);
+            //p.display();
         }
     }
 }
