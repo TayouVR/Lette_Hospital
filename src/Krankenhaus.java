@@ -2,19 +2,20 @@ import java.util.ArrayList;
 
 public class Krankenhaus {
     private String name;
-    private ArrayList<Station> stationsListe;
+    private ArrayList<Station> stations;
     private int anzStationen;
 
     public Krankenhaus(String name) {
         this.name = name;
     }
 
-    public void fuegStationHinzu(Station station) {
-        stationsListe.add(station);
+    public void addStation(Station station) {
+        stations.add(station);
+        anzStationen++;
     }
 
-    public boolean sucheStation(String name) {
-        for (Station s: stationsListe) {
+    public boolean searchStation(String name) {
+        for (Station s: stations) {
             if (s.getName().equals(name)) {
                 return true;
             }
@@ -22,18 +23,19 @@ public class Krankenhaus {
         return false;
     }
 
-    public boolean loescheStation(String name) {
-        for (Station s: stationsListe) {
+    public boolean deleteStation(String name) {
+        for (Station s: stations) {
             if (s.getName().equals(name)) {
-                stationsListe.remove(s);
+                stations.remove(s);
+                anzStationen--;
                 return true;
             }
         }
         return false;
     }
 
-    public void zeigeAlle() {
-        for (Station s: stationsListe) {
+    public void displayAll() {
+        for (Station s: stations) {
             System.out.println(s);
         }
     }
