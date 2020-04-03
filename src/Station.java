@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Station {
     private String name;
-    private ArrayList<Patient> patients;
+    private ArrayList<Patient> patients = new ArrayList<>();
     private int anzPatienten;
 
     public Station(String name) {
@@ -18,24 +18,24 @@ public class Station {
         anzPatienten++;
     }
 
-    public boolean searchPatient(String name) {
-        for (Patient s: patients) {
-            if (s.name.equals(name)) {
-                return true;
-            }
+    public boolean searchPatient(int id) {
+        Patient patient = patients.get(id);
+        if (patient != null) {
+            return true;
+        } else {
+            return false;
         }
-        return false;
     }
 
-    public boolean deletePatient(String name) {
-        for (Patient s: patients) {
-            if (s.name.equals(name)) {
-                patients.remove(s);
-                anzPatienten--;
-                return true;
-            }
+    public boolean deletePatient(int id) {
+        Patient patient = patients.get(id);
+        if (patient != null) {
+            patients.remove(patient);
+            anzPatienten--;
+            return true;
+        } else {
+            return false;
         }
-        return false;
     }
 
     public void displayAll() {

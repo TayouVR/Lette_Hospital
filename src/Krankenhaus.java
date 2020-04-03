@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Krankenhaus {
     private String name;
-    private ArrayList<Station> stations;
+    private ArrayList<Station> stations = new ArrayList<>();
     private int anzStationen;
 
     public Krankenhaus(String name) {
@@ -36,7 +36,7 @@ public class Krankenhaus {
 
     public void displayAll() {
         for (Station s: stations) {
-            System.out.println(s);
+            System.out.println(s.getName());
         }
     }
 }
