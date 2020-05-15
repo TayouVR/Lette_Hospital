@@ -12,17 +12,17 @@ public class Patient {
     }
 
     public void read() {
-        Scanner obj = new Scanner(System.in);
+        Scanner scnr = new Scanner(System.in);
 
         System.out.println("*********************************");
         System.out.println("Geben Sie den Namen des Patienten ein : ");
-        this.name = obj.next();
+        this.name = scnr.next();
 
         System.out.println("Nun das Alter des Patienten : ");
-        this.age = obj.nextInt();
+        this.age = scnr.nextInt();
 
         System.out.println("Geben Sie die id des Patient ein : ");
-        this.id = obj.nextInt();
+        this.id = scnr.nextInt();
         System.out.println("*********************************");
     }
 

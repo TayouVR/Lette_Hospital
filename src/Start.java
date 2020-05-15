@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Start {
     public static void main(String[] args) {
-        Scanner obj = new Scanner(System.in);
+        Scanner scnr = new Scanner(System.in);
         String patientName;
         int patientAge;
         int patientId;
@@ -13,13 +13,13 @@ public class Start {
 
         System.out.println("*********************************"); 
         System.out.println("Geben Sie den Namen des Patienten ein : ");
-        patientName = obj.next();
+        patientName = scnr.next();
 
         System.out.println("Nun das Alter des Patienten : ");
-        patientAge = obj.nextInt();
+        patientAge = scnr.nextInt();
 
         System.out.println("Geben Sie die id des Patient ein : ");
-        patientId = obj.nextInt();
+        patientId = scnr.nextInt();
         System.out.println("*********************************");
 
         Patient p4 = new Patient(patientId,patientName,patientAge);
@@ -39,12 +39,12 @@ public class Start {
         System.out.println("\n\n************** SUCHE ************");
         System.out.println("Bitte Patienten ID eingeben : ");
 
-        patientId = obj.nextInt();
+        patientId = scnr.nextInt();
         System.out.println("Der Patient Nr " + patientId + " ist im System, " + w1.searchPatient(patientId));
         System.out.println("\n");
 
         System.out.println("Geben Sie die ID des zu löschenden Patienten ein: : ");
-        patientId = obj.nextInt();
+        patientId = scnr.nextInt();
 
         System.out.println("\n\n************** Nach loesche ************");
         System.out.println("Der Patient Nr " + patientId + " wurde gelöscht: " + w1.deletePatient(patientId));
